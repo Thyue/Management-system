@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="./dist/img/network.png" />
+  <link rel="stylesheet" href="./dist/style/bootstrap.min.css">
+  <link rel="stylesheet" href="./dist/style/style_system.min.css">
+  <title>管理系統</title>
+</head>
+
+<body>
+  <div id="bg">
+    <div style="background:darkcyan; position: fixed;z-index: 3;width: 100%;top:0;">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <button id="logout" class="btn btn-secondary btn-sm" style="margin-top: 5px;">登出</button>
+          </div>
+          <div class="col">
+            <h3 style="text-align: center;">首頁</h3>
+          </div>
+          <div class="col" style="padding-right: 0px">
+            <p style="margin-bottom:0;padding-top:20px;font-size:12px;text-align: right"><span
+                style="color:blue;">admin</span> 你好！</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="position: relative;top:50px;z-index: 2;">
+      <h5 style="display: inline-block">目前狀態：</h5>
+      <input type="text" id="" class="form-control" style="display: inline-block;width: 170px;" placeholder="休假(人在桃園)">
+      <div class="form-row" style="margin-top: 10px">
+        <div class="col-4">
+          <select class="form-control form-control-sm"" style=" display: inline-block;">
+            <option value="" selected>休假</option>
+            <option value="">站哨</option>
+            <option value="">主陣地-值班</option>
+            <option value="">預備陣地-值班</option>
+            <option value="">補休</option>
+            <option value="">公差</option>
+            <option value="">其他</option>
+          </select>
+        </div>
+        <div class="col">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control form-control-sm" placeholder="輸入區(或備註)">
+            <div class="input-group-append">
+              <button class="btn btn-primary btn-sm" type="button" id="button-addon2">更新狀態</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <table class="table table-bordered" overflow-x: auto>
+        <thead>
+          <tr>
+            <th scope="col">狀態</th>
+            <th scope="col">人數</th>
+            <th scope="col">人員</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>休假</td>
+            <td>4人</td>
+            <td>ＸＸＸ、ＸＸＸ、ＸＸＸ、ＸＸＸ</td>
+          </tr>
+          <tr>
+            <td>值班</td>
+            <td>4人</td>
+            <td>ＸＸＸ、ＸＸＸ、ＸＸＸ、ＸＸＸ</td>
+          </tr>
+          <tr>
+            <td>站哨</td>
+            <td>1人</td>
+            <td>ＸＸＸ</td>
+          </tr>
+          <tr>
+            <td>補修</td>
+            <td>2人</td>
+            <td>ＸＸＸ、ＸＸＸ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <div class="container p-0" style="position: fixed;z-index: 3;width: 100%;bottom:0;text-align: center;">
+        <div class="row">
+          <div class="col" style="background:darkcyan;padding-top: 8px;padding-bottom: 8px;">
+            目前狀態
+          </div>
+          <div class="col" style="background:green;padding-top: 8px;padding-bottom: 8px;">
+            工具列
+          </div>
+          <div class="col" style="background:orange;padding-top: 8px;padding-bottom: 8px;">
+            關於作者
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./dist/js/particles.min.js"></script>
+  <script src="./dist/js/app.js"></script>
+  <script src="./dist/js/mian_system.js"></script>
+</body>
+
+</html>
