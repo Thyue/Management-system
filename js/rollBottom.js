@@ -33,10 +33,10 @@ function getScrollHeight() {
 }
 //開始監聽滾動事件
 window.onscroll = function () {
-  if (getDocumentTop() == 0){
+  if (getDocumentTop() == 0) {
     return;
   }
-  else if (getScrollHeight() == getWindowHeight() + getDocumentTop()) {
+  else if (getScrollHeight() - (getWindowHeight() + getDocumentTop()) < 25) {
     document.getElementById("footer").setAttribute("class", "container-fluid p-0"); //初始化class
     document.getElementById("footer").classList.add("rollBottom_DownToHide_active");
   }
