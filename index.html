@@ -5,31 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" type="image/png" href="./dist/img/network.png" />
-  <link rel="stylesheet" href="./dist/style/bootstrap.min.css">
-  <script src="./dist/js/TweenMax.min.js"></script>
-  <script src="./dist/js/tool.js"></script>
-  <link rel="stylesheet" href="./dist/style/style_index.min.css">
+  <link rel="icon" type="image/png" href="./img/icon.png" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.min.css">
   <title>管理系統</title>
 </head>
 
 <body>
-  <div id="wrapper">
-    <div id="clouds"></div>
-    <div id="gress"></div>
+  <div id="bg"></div>
+  <div id="thePage" class="container">
+    <p>製作區域</p>
   </div>
-  <div id="page" class="container">
-    <h2 id="systemTitle" face="標楷體">管理系統</h1>
-      <p><img src="./dist/img/R1_Logo.gif" alt="R1_Logo"></p>
-      <div id="login" class="box" style="display: block;">
-        <h3>請登入</h3>
-        <input id="account" type="text" name="" placeholder="帳號" />
-        <input id="password" type="password" name="" placeholder="密碼" />
-        <input id="loginBtn" type="submit" name="" value="登入">
+
+  <header>
+    <div id="header" class="container pl-1 pr-1">
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-secondary btn-sm pt-0 pb-0 mt-2">登出</button>
+        </div>
+        <div class="col">
+          <h4 class="text-center mb-0 mt-1">首頁</h4>
+        </div>
+        <div class="col" style="font-size: 14px">
+          <p class="text-right mb-0 mt-3"><span id="loginUserName">admin</span> 你好！</p>
+        </div>
       </div>
-      <div id="animation" class="sk-rotating-plane"></div>
+    </div>
+  </header>
+  <div id="footer" class="container-fluid p-0 ">
+    <div class="row">
+      <div id="status" class="col text-center pt-2 pb-1">目前狀態</div>
+      <div id="toolsPage" class="col text-center pt-2 pb-1">工具列</div>
+      <div id="about" class="col text-center pt-2 pb-1">關於作者</div>
+    </div>
   </div>
-  <script src="./dist/js/main.js"></script>
+  <script src="./js/particles.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/rollBottom.js"></script>
   <script>
 
   </script>
